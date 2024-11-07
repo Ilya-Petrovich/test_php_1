@@ -12,7 +12,7 @@ function createOrder($event_id, $event_date, $ticket_adult_price,
 	$equal_price = $ticket_adult_price * $ticket_adult_quantity + $ticket_kid_price * $ticket_kid_quantity;
 
 	$url = 'https://api.site.com/book';
-	$url = 'http://localhost/test_tasks/nevatrip_02.11.24/mok_script.php';
+	// $url = 'http://localhost/test_tasks/nevatrip_02.11.24/mok_script.php';
 
 	# making 3 attempts to avoid potential problems with infinite loop
 	$n = 3;
@@ -58,7 +58,7 @@ function createOrder($event_id, $event_date, $ticket_adult_price,
 	
 	# if we received success respond for create request we make approve request
 	$url = 'https://api.site.com/approve';
-	$url = 'http://localhost/test_tasks/nevatrip_02.11.24/mok_script_2.php';
+	// $url = 'http://localhost/test_tasks/nevatrip_02.11.24/mok_script_2.php';
 
 	$data = ['barcode' => $barcode];
 	$options = [
